@@ -1,7 +1,7 @@
 # python_json
 Exercice : extract some informations from a JSON file
 
-
+###Usage: ./script.py FILE1 [FILE2, ...]
 
 #### From the file profil_500.json, we want to extract the name of people who:
 
@@ -12,7 +12,7 @@ Exercice : extract some informations from a JSON file
 
 Json file generated on https://www.json-generator.com
 
-with this model : 
+with this model :
 ```
 {
   profils:
