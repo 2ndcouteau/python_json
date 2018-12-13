@@ -38,9 +38,10 @@ def exit_error():
 
 def get_json(file):
 	try:
-		file_content = open(file)
-		json_content = file_content.read()		# Can be minify as:
+		file_fd = open(file)
+		json_content = file_fd.read()		# Can be minify as:
 		json_object = loads(json_content)		# json_object = loads(file_content.read())
+		file_fd.close()
 		return json_object
 	except:
 		print("Error file format : \"%s\" is not a valid json file." % file, file=sys.stderr)
